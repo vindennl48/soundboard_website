@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Soundboard</title>
+<meta name="description" content="Help and contact for Soundboard.">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<style>
+  :root {
+    --bg: #0b0b14;
+    --bg-2: #14102a;
+    --text: #eef2f6;
+    --muted: #9aa6b2;
+    --accent: #ff4f8b;
+    --accent-2: #7a63ff;
+    --border: rgba(255,255,255,.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    background: radial-gradient(1200px 600px at 80% -10%, rgba(122,99,255,.16), transparent 60%),
+                radial-gradient(900px 500px at 0% 0%, rgba(255,79,139,.12), transparent 55%),
+                var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  header {
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    background: rgba(11,11,20,.7);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .nav { max-width: 980px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 12px; }
+  .nav img { width: 28px; height: 28px; border-radius: 7px; }
+  .nav .brand { font-weight: 700; letter-spacing: -.01em; }
+  .nav .brand span { color: var(--muted); font-weight: 400; }
+  .nav .back { margin-left: auto; font-size: 14px; color: var(--muted); }
+  main { padding: 56px 0 80px; }
+  h1 { font-size: 34px; letter-spacing: -.02em; line-height: 1.2; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 40px; }
+  h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -.01em; }
+  h2::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)); margin-right: 10px; }
+  p, li { color: #c6d0d9; }
+  p { margin-bottom: 14px; }
+  ul { margin: 0 0 14px 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: rgba(255,255,255,.03);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 28px 0;
+    backdrop-filter: blur(10px);
+  }
+  .card strong { color: var(--accent); }
+  .muted { color: var(--muted); }
+  footer { border-top: 1px solid var(--border); padding: 28px 24px; text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <img src="assets/icon.png" alt="Soundboard icon">
+    <div class="brand">Soundboard <span>· Support</span></div>
+    <a class="back" href="index.html">← Home</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Support</h1>
+    <p class="sub">Soundboard for iPhone, iPad, Mac and Android</p>
+
+    <div class="card">
+      <h2>Get help</h2>
+      <p>Email <a href="mailto:zofiaudio@gmail.com">zofiaudio@gmail.com</a> with a description of the problem, your device, and its
+      operating system version. We read every message.</p>
+    </div>
+
+    <h2>How do I add a sound?</h2>
+    <p>Tap an empty pad. Choose <strong>Record what's playing</strong> to capture audio from another app, or
+    <strong>Load file…</strong> to pick an audio or video file.</p>
+
+    <h2>How does recording work on iPhone and iPad?</h2>
+    <ul>
+      <li>Tap <strong>Record what's playing</strong>, then <strong>Start Broadcast</strong> on the system sheet.</li>
+      <li>After the countdown, switch to the app with your sound and play it.</li>
+      <li>Come back and tap <strong>Stop</strong>. The quiet start and end are trimmed for you.</li>
+    </ul>
+    <p>iOS shows a message that the broadcast stopped; that is expected. Only audio is kept, never the screen.</p>
+
+    <h2>My recording is silent</h2>
+    <p>Some apps block their audio from being captured, especially music and video services with protected content.
+    Try playing the sound somewhere else, such as a web page, and record again. Also check that the sound was actually
+    playing out loud while recording.</p>
+
+    <h2>Why does Android ask about the microphone and sharing my screen?</h2>
+    <p>Android requires both permissions before any app can capture what the phone is playing. The app captures only the
+    audio your phone plays; it does not record your voice or your screen.</p>
+
+    <h2>How do I trim or change a sound?</h2>
+    <p>Switch to <strong>Edit</strong> at the top and tap a pad. Drag the In and Out handles on the waveform, adjust volume,
+    fades, pitch and speed, then tap <strong>Done</strong>.</p>
+
+    <h2>How do I move my sounds to another device?</h2>
+    <p>Open Settings, choose <strong>Export board…</strong>, and save the file. On the other device choose
+    <strong>Import board…</strong> and pick that file.</p>
+
+    <h2>Sounds don't play</h2>
+    <p>Check the volume in the app's top bar and your device volume. On iPhone the app plays even with the silent switch on.</p>
+  </div>
+</main>
+
+<footer>© 2026 Mitchell Woodbine · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
